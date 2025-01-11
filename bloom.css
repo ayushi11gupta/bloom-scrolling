@@ -1,0 +1,404 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #3700b3;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6200ea;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6200ea;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6200ea, #3700b3);
+    color: white;
+    padding: 100px 5% 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+.features {
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Video Section */
+.video-section {
+    padding: 50px 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+    max-height: 720px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Gamification Section */
+.gamification {
+    padding: 50px 5%;
+    background-color: #f0e6ff;
+}
+
+.gamification h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gamification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.gamification-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gamification-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Quizzes Section */
+.quizzes {
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+}
+
+.quizzes h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.options {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.option {
+    background-color: #f0e6ff;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #d4b3ff;
+}
+
+.result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Learning Section */
+.learning {
+    padding: 50px 5%;
+    background-color: white;
+}
+
+.learning h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.learning-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.topic-button {
+    background-color: #f0e6ff;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.topic-button:hover, .topic-button.active {
+    background-color: #d4b3ff;
+}
+
+.topic-content {
+    flex-grow: 1;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    .learning-container {
+        flex-direction: column;
+    }
+
+    .topics {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .topic-button {
+        white-space: nowrap;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
